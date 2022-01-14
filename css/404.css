@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1d1d4b;
+    background-color: #0a005f;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -18,7 +18,7 @@ header {
     height: 7vh;
     width: 100%;
     z-index: 1040;
-    background-color: #fefaf6;
+    background-color: #0a005fa2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,8 @@ header {
     font-size: 2em;
     text-transform: capitalize;
     font-family: Brush Script MT, Big Caslon, Times New Roman, serif;
-    color: #232320;
+    color: #fefaf6;
+    text-decoration: none;
 }
 
 .logo:hover {
@@ -48,6 +49,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.5em;
     background: url('../images/fond-espace.png') no-repeat center/cover;
 }
 
@@ -65,6 +67,20 @@ header {
 #texte-404 img {
     max-width: 30vw;
     width: 100%;
+}
+
+#contenu a {
+    border-radius: 1000px;
+    border: 3px solid #4FD1C5;
+    box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+    padding: 20px;
+    text-decoration: none;
+    color: #fefaf6;
+}
+
+#contenu a:hover {
+    background-color: #4FD1C5;
+    transition: all 0.5s;
 }
 
 #mascotte {
