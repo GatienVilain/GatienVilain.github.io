@@ -1,87 +1,48 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Gatien Vilain - Engineering Student</title>
     <meta name="author" content="Gatien Vilain">
-    <meta name="keywords" content="Gatien, Vilain, Ingénieur, Junia, ISEN, Lille, Rust, C, Cpp, C++, Python, Kotlin, HTML, HTML5, CSS, CSS3, JavaScript, PHP">
+    <meta name="keywords" content="Gatien, Vilain, Ingénieur, Junia, ISEN, Lille, Rust, C, Cpp, C++, Python, HTML, HTML5, CSS, CSS3, JavaScript, JS">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Gatien Vilain</a>
-        <input type="checkbox" id="menu-chekbox">
-        <label for="menu-chekbox">&#9776;</label>
-        <nav class="menu">
-            <a href="#presentation">Qui suis-je ?</a>
-            <a href="#projets">Mes Projets</a>
-            <a href="#contact">Me Contacter</a>
+        <a href="/" class="logo">Gatien Vilain</a>
+        <button id="navbar-button"></button>
+        <nav class="navbar">
+            <a href="/">WORK</a>
+            <a href="/about/">ABOUT</a>
         </nav>
     </header>
-    <section id="presentation">
-        <span>
-            <img src="./images/Presentation.jpg" alt="Gatien Vilain">
-            <div>
-                <h1>Hey, je m'appelle Gatien !</h1>
-                <p>
-                    Je suis étudiant à Junia ISEN Lille - Institut supérieur de l'électronique et du numérique.
-                </p>
-            </div>
-        </span>
-        <p>
-            Je suis une personne très curieuse, ainsi je me suis rapidement intéressé au monde qui m'entoure et en particulier les nouvelles technologies. Je maitrise plusieurs langages de programmation, comme C, Kotlin, Python, Rust et bien d'autres. Je suis une
-            personne souriante et dynamique. J'aime prendre des photos, faire du sport, comme l’escalade et la natation, et parcourir le monde. J'adore voyager, rencontrer des gens et leur culture.
-        </p>
+    <section id="introduction">
+        <h1>Hi, I'm Gatien Vilain - a Lille-based, Nothern France born engineering student at Junia ISEN Lille.</h1>
     </section>
     <section id="projets">
-        <div>
+        <header>
             <h2>Mes projets</h2>
             <p>
                 Toujours à la recherche de connaissances, je m'amuse à réaliser plusieurs projets pour découvrir de nouveaux outils et augmenter mon expérience dans les nouvelles technologies.
             </p>
-        </div>
-        <section id="website">
-            <div>
-                <h3>Un site Web</h3>
-                <p>
-                    Pour améliorer mes compétences en programmation web, j'ai décidé de réaliser un site internet (celui-ci) pour me présenter.
-                </p>
-                <span>
-                    <p> Pour en savoir plus, voici le lien du dépôt </p>
-                    <a href="https://github.com/GatienVilain/GatienVilain.github.io" target="_blank">GitHuB &raquo</a>
-                </span>
-            </div>
-            <img src="./images/website.jpg" alt="Ordinateur avec site internet">
-        </section>
-        <section id="binairo">
-            <img src="./images/Binairo.jpg" alt="Fenêtre du jeu de Binairo">
-            <div>
-                <h3>Un jeu vidéo</h3>
-                <p>
-                    Dans le cadre du projet de fin d'année de première année d'école préparatoire, il m'a été demandé de programmer en Python un jeu de Binero comprenant une interface graphique (TkInter)
-                </p>
-                <span>
-                    <p>Tu peux retrouver le projet sur </p>
-                    <a href="https://github.com/GatienVilain/Binairo" target="_blank">GitHuB &raquo</a>
-                </span>
-            </div>
-        </section>
-        <section id="electronique">
-            <div>
-                <h3>Un système électronique</h3>
-                <p>
-                    En deuxième année d'école préparatoire, j'ai choisi le sujet de la RFID - Radio-identification - pour mon sujet de travail d'initiative personnelle encadré. À cette occasion, j'ai réalisé un système de bornes de métro avec lecture par technologie RFID
-                    et vérification de la validité du titre de transport par communication avec une base de données.
-                </p>
-            </div>
-            <video src="./videos/rfid.mp4" type="Système de borne RFID" autoplay muted loop>
-                Il semble que votre navigateur internet ne supporte pas la lecture de video.
-            </video>
-        </section>
+        </header>
+        <nav>
+            <button>SHOW ALL</button>
+            <button>DIGITAL</button>
+            <button>ELECTRONICS</button>
+        </nav>
+        <a id="website">
+            <h3>Un site Web</h3>
+        </a>
+        </a id="binairo">
+        <h3>Un jeu vidéo</h3>
+        </a>
+        <a id="electronique">
+            <h3>Un système électronique</h3>
+        </a>
     </section>
     <section id="contact">
         <h2>Me contacter</h2>
