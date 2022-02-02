@@ -1,0 +1,14 @@
+.logo.complet {
+    display: none;
+}
+
+#navbar {
+    display: none;
+}
+
+
+/* Introduction section */
+
+#introduction {
+    background-image: url("../images/Presentation.jpg");
+}

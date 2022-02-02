@@ -1,0 +1,76 @@
+:root {
+    --bleu-canard: #2f8b9c;
+    --indigo: #530c9c;
+    --antracite: #2a3133;
+    --Corail: #f58045;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:hover {
+    color: var(--Corail);
+    transition: all ease 0.5s;
+}
+
+.logo {
+    font-family: 'Brush Script MT', 'Bradley Hand Italic', Georgia, serif;
+    font-size: 2em;
+    color: white;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: var(--antracite);
+}
+
+
+/* banner */
+
+#banner {
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 7vh;
+    width: 100%;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6vw;
+}
+
+#banner .logo {
+    z-index: 1024;
+}
+
+#banner nav {
+    z-index: 1000;
+}
+
+
+/* Introduction section */
+
+#introduction {
+    background-color: var(--bleu-canard);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    position: absolute;
+}
