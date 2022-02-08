@@ -2,6 +2,15 @@
     display: none;
 }
 
+.logo.mobile {
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+.logo.mobile:hover {
+    font-size: 3em;
+}
+
 #navbar {
     display: none;
 }
@@ -11,4 +20,28 @@
 
 #introduction {
     background-image: url("../images/Presentation.jpg");
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#introduction h1 {
+    background-color: var(--bleu-canard);
+    font-weight: 300;
+    padding: 6vw;
+    margin: 10vw;
+    border-radius: 25px;
+}
+
+
+/* Work section */
+
+#work a {
+    display: block;
+    height: 100vw;
+    align-items: auto;
+    text-decoration: none;
+}
+
+#website {
+    background-color: yellow;
 }

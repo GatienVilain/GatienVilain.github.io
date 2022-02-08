@@ -12,7 +12,7 @@ h4,
 h5,
 h5,
 h6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 a:hover {
@@ -22,8 +22,12 @@ a:hover {
 
 .logo {
     font-family: 'Brush Script MT', 'Bradley Hand Italic', Georgia, serif;
-    font-size: 2em;
     color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -64,13 +68,66 @@ body {
 /* Introduction section */
 
 #introduction {
-    background-color: var(--bleu-canard);
-    margin: 0;
+    display: flex;
+    top: 0;
     height: 100vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
-    position: absolute;
+    align-items: center;
+}
+
+#introduction h1 {
+    color: white;
+}
+
+
+/* My Work section */
+
+#work {
+    width: 100vw;
+    background-color: white;
+}
+
+#work h2 {
+    font-size: 2em;
+    padding: 2vh 0;
+}
+
+#work p {
+    text-justify: inter-word;
+}
+
+#work header {
+    display: flex;
+    padding: 4vh 10vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#work nav {
+    display: flex;
+    margin: 2vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#work nav button {
+    margin: 0 4vw;
+    padding: 10px;
+    border: 0;
+    background-color: inherit;
+    opacity: 0.3;
+}
+
+#work nav button:hover {
+    opacity: 1;
+    border-radius: 10px;
+    background-color: #2a31331a;
+}
+
+#work nav .active {
+    opacity: 1;
 }
