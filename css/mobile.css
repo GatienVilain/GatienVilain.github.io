@@ -7,10 +7,6 @@
     text-decoration: none;
 }
 
-.logo.mobile:hover {
-    font-size: 3em;
-}
-
 #navbar {
     display: none;
 }
@@ -19,29 +15,22 @@
 /* Introduction section */
 
 #introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-image: url("../images/Presentation.jpg");
-    justify-content: center;
-    align-items: flex-end;
 }
 
 #introduction h1 {
-    background-color: var(--bleu-canard);
     font-weight: 300;
     padding: 6vw;
     margin: 10vw;
-    border-radius: 25px;
 }
 
 
 /* Work section */
 
 #work a {
-    display: block;
     height: 100vw;
-    align-items: auto;
-    text-decoration: none;
-}
-
-#website {
-    background-color: yellow;
+    width: 100vw;
 }

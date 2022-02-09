@@ -15,14 +15,18 @@ h6 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-a:hover {
-    color: var(--Corail);
-    transition: all ease 0.5s;
+button {
+    border: 0;
+    background-color: inherit;
 }
 
 .logo {
     font-family: 'Brush Script MT', 'Bradley Hand Italic', Georgia, serif;
     color: white;
+}
+
+.logo.mobile:hover {
+    transform: scale(1.3);
 }
 
 * {
@@ -64,22 +68,32 @@ body {
     z-index: 1000;
 }
 
+#banner a:hover {
+    transition: all ease 0.5s;
+}
+
 
 /* Introduction section */
 
 #introduction {
-    display: flex;
     top: 0;
     height: 100vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    align-items: center;
 }
 
 #introduction h1 {
     color: white;
+    background-color: var(--antracite);
+    border-radius: 25px;
+    filter: brightness(150%);
+}
+
+#introduction a {
+    height: 7vh;
+    width: 100vw;
 }
 
 
@@ -89,6 +103,9 @@ body {
     width: 100vw;
     background-color: white;
 }
+
+
+/* My Work section - header */
 
 #work h2 {
     font-size: 2em;
@@ -119,7 +136,7 @@ body {
     padding: 10px;
     border: 0;
     background-color: inherit;
-    opacity: 0.3;
+    opacity: 0.66;
 }
 
 #work nav button:hover {
@@ -130,4 +147,57 @@ body {
 
 #work nav .active {
     opacity: 1;
+    font-weight: 600;
 }
+
+
+/* My Work section - links */
+
+#work a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    color: white;
+}
+
+#work a:hover {
+    filter: brightness(90%);
+    background-size: cover;
+}
+
+#work h3 {
+    font-weight: 800;
+    font-size: 1.8em;
+    letter-spacing: 0.5em;
+}
+
+#website {
+    color: var(--antracite);
+    background-position: bottom;
+    background-color: #f0d300;
+    background-image: url("../images/website.jpg");
+    background-repeat: no-repeat;
+}
+
+#website:hover {
+    color: #f0d300;
+}
+
+#philia {
+    background-position: center;
+    background-color: #4b4a48;
+    background-image: url("../images/philia.jpg");
+    background-repeat: no-repeat;
+}
+
+#binairo {
+    background-position: center;
+    background-color: #3c7c9c;
+    background-image: url("../images/Binairo.jpg");
+    background-repeat: no-repeat;
+}
+
+
+/* Contact section */
