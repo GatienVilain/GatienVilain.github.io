@@ -13,22 +13,23 @@
     <meta name="color-scheme" content="normal">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/mobile.css">
 </head>
 
 <body>
     <header id="banner">
-        <a href="/" class="logo complet">Gatien Vilain</a>
-        <a href="/" class="logo mobile">GV</a>
+        <a title="Return to home page" href="/" class="logo complet">Gatien Vilain</a>
+        <a title="Return to home page" href="/" class="logo mobile">GV</a>
         <button id="navbar-button"></button>
         <nav id="navbar">
-            <a href="/">WORK</a>
-            <a href="/about/">ABOUT</a>
+            <a title="Go to my work section" href="#work">WORK</a>
+            <a title="Go to the about me page, where I will introduce myself in more detail" href="/about/">ABOUT</a>
         </nav>
     </header>
     <section id="introduction">
         <h1>Hi, I'm Gatien Vilain, a French engineering student at Junia ISEN Lille.</h1>
+        <a title="Skip to my work section" href="#work"></a>
     </section>
     <section id="work">
         <header>
@@ -36,34 +37,37 @@
             <p>
                 Always in search of knowledge, I enjoy carrying out several projects to discover new tools and increase my experience in new technologies.
             </p>
-            <nav>
-                <button class="active">SHOW ALL</button>
-                <button>DIGITAL</button>
-                <button>ELECTRONIC</button>
+            <nav title="Navigation bar to filter my projects by discipline">
+                <button title="Show all projets" class="active">SHOW ALL</button>
+                <button title="Show digital projects only">DIGITAL</button>
+                <button title="Show electronic projects only">ELECTRONIC</button>
             </nav>
         </header>
         <section>
-            <a id="website" href="">
+            <a title="Go to the page that presents my website" id="website" class="digital" rel="external" href="https://github.com/GatienVilain/GatienVilain.github.io">
                 <h3>MY WEBSITE</h3>
             </a>
-            <a id="binairo" href="">
-                <h3>BINAIRO</h3>
+            <a title="Go to the page presenting the 'philia' project" id="philia" class="digital" rel="external" href="https://github.com/Philia-Polem/Philia">
+                <h3>PHILIA</h3>
             </a>
-            <a id="rfid" href="">
-                <h3>RFID METRO TERMINAL</h3>
+            <a title="Go to the page that presents my binairo written in python" id="binairo" class="digital" rel="external" href="https://github.com/GatienVilain/Binairo">
+                <h3>BINAIRO</h3>
             </a>
         </section>
     </section>
     <section id="contact">
         <h2>Contact me</h2>
         <p>
-            Find me on the social network of your choice or contact me at this email address<a href="mailto:Gatien.Vilain@outlook.fr">gatien.vilain@outlook.fr</a>
+            Find me on the social network of your choice or contact me at this email address
+            <a title="Opens a new window in your email client with my email address already filled in." rel="external" href="mailto:Gatien.Vilain@outlook.fr">
+                gatien.vilain@outlook.fr
+            </a>
         </p>
         <span>
-            <a id="linkedin" href="https://github.com/GatienVilain" target="_blank">
+            <a title="Open my LinkedIn page in a new tab" id="linkedin" rel="external" href="https://github.com/GatienVilain" target="_blank" rel="noreferrer" rel="noopener">
                 <img src="./images/github.png" alt="My github page">
             </a>
-            <a id="github" href="https://www.linkedin.com/in/gatien-vilain/" target="_blank">
+            <a title="Open my GitHub page in a new tab" id="github" rel="external" shref="https://www.linkedin.com/in/gatien-vilain/" target="_blank"  rel="noreferrer" rel="noopener">
                 <img src="./images/linkedin.png" alt="My linkedin profile">
             </a>
         </span>
