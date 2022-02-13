@@ -14,10 +14,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- Style Sheets -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/mobile.css">
+    <link rel="stylesheet" media="only screen and (max-width : 601px)" href="./css/mobile.css">
     <!--  Scripts  -->
     <script src="./js/script.js" async></script>
-    <script media="screen and (max-width: 600px)" src="./js/mobile.js" async></script>
+    <script media="only screen and (max-width : 601px)" src="./js/mobile.js" async></script>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <header id="banner">
         <a title="Return to home page" href="/" class="logo complet">Gatien Vilain</a>
         <a title="Return to home page" href="/" class="logo mobile">GV</a>
-        <button id="navbar-button" class="close" onclick="changes_menu_state()"></button>
+        <button title="Open the navigation bar" id="navbar-button" class="close" onclick="changes_menu_state()"></button>
         <nav id="navbar">
             <a title="Go to my work section" href="#work" onclick="changes_menu_state()">WORK</a>
             <a title="Go to the about me page, where I will introduce myself in more detail" href="/about/">ABOUT</a>

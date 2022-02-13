@@ -6,10 +6,12 @@ function changes_menu_state() {
     if (button.className === "close") {
         // If the navbar is hidden, show it and set the navbar button to open
         button.className = "open";
+        button.title = "Close navigation bar";
         menu.style.display = "flex";
     } else {
         // otherwise, we hide the navbar and set the navbar button to close
         button.className = "close";
+        button.title = "Open the navigation bar";
         menu.style.display = "none";
 
     }
