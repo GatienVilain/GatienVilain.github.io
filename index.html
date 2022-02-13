@@ -15,15 +15,23 @@
     <!-- Style Sheets -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="./css/mobile.css">
+    <!--  Scripts  -->
+    <script src="./js/script.js" async></script>
+    <script media="screen and (max-width: 600px)" src="./js/mobile.js" async></script>
 </head>
 
 <body>
+    <noscript>
+        <p>
+            Caution: Scripting features are not supported or are disabled. Some site functions require JavaScript and may not work.
+        </p>
+    </noscript>
     <header id="banner">
         <a title="Return to home page" href="/" class="logo complet">Gatien Vilain</a>
         <a title="Return to home page" href="/" class="logo mobile">GV</a>
-        <button id="navbar-button"></button>
+        <button id="navbar-button" class="close" onclick="changes_menu_state()"></button>
         <nav id="navbar">
-            <a title="Go to my work section" href="#work">WORK</a>
+            <a title="Go to my work section" href="#work" onclick="changes_menu_state()">WORK</a>
             <a title="Go to the about me page, where I will introduce myself in more detail" href="/about/">ABOUT</a>
         </nav>
     </header>
@@ -38,9 +46,9 @@
                 Always in search of knowledge, I enjoy carrying out several projects to discover new tools and increase my experience in new technologies.
             </p>
             <nav title="Navigation bar to filter my projects by discipline">
-                <button title="Show all projets" class="active">SHOW ALL</button>
-                <button title="Show digital projects only">DIGITAL</button>
-                <button title="Show electronic projects only">ELECTRONIC</button>
+                <button title="Show all projets" id="button-all" class="active" onclick="works_filter('all')">SHOW ALL</button>
+                <button title="Show digital projects only" id="button-digital" onclick="works_filter('digital')">DIGITAL</button>
+                <button title="Show electronic projects only" id="button-electronic" onclick="works_filter('electronic')">ELECTRONIC</button>
             </nav>
         </header>
         <section>
@@ -59,17 +67,15 @@
         <h2>Contact me</h2>
         <p>
             Find me on the social network of your choice or contact me at this email address
-            <a title="Opens a new window in your email client with my email address already filled in." rel="external" href="mailto:Gatien.Vilain@outlook.fr">
+            <a title="Opens a new window in your email client with my email address already filled in." class="email" rel="external" href="mailto:Gatien.Vilain@outlook.fr">
                 gatien.vilain@outlook.fr
             </a>
         </p>
-        <span>
-            <a title="Open my LinkedIn page in a new tab" id="linkedin" rel="external" href="https://github.com/GatienVilain" target="_blank" rel="noreferrer" rel="noopener">
-                <img src="./images/github.png" alt="My github page">
-            </a>
-            <a title="Open my GitHub page in a new tab" id="github" rel="external" shref="https://www.linkedin.com/in/gatien-vilain/" target="_blank"  rel="noreferrer" rel="noopener">
-                <img src="./images/linkedin.png" alt="My linkedin profile">
-            </a>
+        <span id="social-networks">
+            <a title="Open my LinkedIn page in a new tab" id="github" rel="external" href="https://github.com/GatienVilain" target="_blank" rel="noreferrer" rel="noopener">
+                <img src="./images/github.png" alt="My github page"></a>
+            <a title="Open my GitHub page in a new tab" id="linkedin" rel="external" href="https://www.linkedin.com/in/gatien-vilain/" target="_blank"  rel="noreferrer" rel="noopener">
+                <img src="./images/linkedin.png" alt="My linkedin profile"></a>
         </span>
     </section>
     <footer>Gatien Vilain</footer>

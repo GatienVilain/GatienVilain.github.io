@@ -7,8 +7,90 @@
     text-decoration: none;
 }
 
+
+/* Banner */
+
+#banner {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-button {
+    z-index: 1020;
+}
+
+#navbar-button:after,
+#navbar-button:before {
+    display: block;
+    height: 0.3em;
+    width: 2em;
+    margin: 0.5em;
+    background-color: var(--antracite);
+    border-radius: 10%/100%;
+    content: '';
+    transition: all 0.2s ease-in-out;
+}
+
+#navbar-button:hover:before,
+#navbar-button:hover:after,
+#navbar-button:focus:before,
+#navbar-button:focus:after {
+    background-color: var(--Corail);
+    transform: scale(1.4);
+}
+
+#navbar-button.open:before {
+    transform: translateY(0.8em) rotate(40deg);
+}
+
+#navbar-button.open:hover:before,
+#navbar-button.open:focus:before {
+    background-color: var(--Corail);
+    transform: translateY(0.8em) rotate(40deg) scale(1.4);
+}
+
+#navbar-button.open:after {
+    transform: rotate(-40deg);
+}
+
+#navbar-button.open:hover:after,
+#navbar-button.open:focus:after {
+    background-color: var(--Corail);
+    transform: rotate(-40deg) scale(1.4);
+}
+
 #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    color: var(--indigo);
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar a:hover,
+#navbar a:focus {
+    transform: scale(1.2);
+}
+
+#navbar a:first-child:after {
+    background-color: var(--antracite);
+    display: block;
+    content: '';
+    height: 0.1em;
+    width: 2.8em;
+    margin: 1vh 0;
+    border-radius: 100%;
 }
 
 
@@ -33,4 +115,11 @@
 #work a {
     height: 100vw;
     width: 100vw;
+}
+
+
+/* Contact section */
+
+#social-networks img {
+    width: 15vw;
 }
