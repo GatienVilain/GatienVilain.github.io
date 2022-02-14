@@ -110,7 +110,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("../images/Presentation.jpg");
+    background-image: url("../images/introduction-small.jpg");
 }
 
 #introduction h1 {

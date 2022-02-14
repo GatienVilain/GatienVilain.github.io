@@ -36,8 +36,8 @@ p {
 #navbar-button:after,
 #navbar-button:before {
     display: block;
-    height: 0.6em;
-    width: 3.5em;
+    height: 0.5em;
+    width: 3.4em;
     margin: 0.5em;
     background-color: var(--antracite);
     border-radius: 20%/100%;
@@ -54,13 +54,13 @@ p {
 }
 
 #navbar-button.open:before {
-    transform: translate(-0.1em, 1.2em) rotate(40deg);
+    transform: translateY(1em) rotate(40deg);
 }
 
 #navbar-button.open:hover:before,
 #navbar-button.open:focus:before {
     background-color: var(--Corail);
-    transform: translate(-0.1em, 1.2em) rotate(40deg) scale(1.4);
+    transform: translateY(1em) rotate(40deg) scale(1.2);
 }
 
 #navbar-button.open:after {
@@ -70,7 +70,7 @@ p {
 #navbar-button.open:hover:after,
 #navbar-button.open:focus:after {
     background-color: var(--Corail);
-    transform: rotate(-40deg) scale(1.4);
+    transform: rotate(-40deg) scale(1.2);
 }
 
 #navbar {
@@ -114,15 +114,18 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("../images/Presentation.jpg");
+    align-items: flex-end;
+    background-image: url("../images/introduction-medium.jpg");
+    background-position: left;
 }
 
 #introduction h1 {
+    max-width: 60vw;
     font-size: 2em;
     font-weight: 70;
     letter-spacing: 0.1em;
     padding: 6vw;
-    margin: 10vw;
+    margin: 0 7vw;
 }
 
 

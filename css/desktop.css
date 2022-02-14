@@ -1,0 +1,115 @@
+h2 {
+    font-size: 2.3em;
+}
+
+h3 {
+    font-weight: 1000;
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.logo.mobile {
+    display: none;
+}
+
+.logo.complet {
+    font-size: 2.3em;
+    text-decoration: none;
+}
+
+
+/* Banner */
+
+#banner {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-button {
+    display: none;
+}
+
+#navbar {
+    display: flex;
+}
+
+#navbar a {
+    font-size: 1.2em;
+    color: var(--antracite);
+    text-decoration: none;
+    margin: 0 2vw;
+}
+
+#navbar a:hover {
+    color: var(--Corail);
+}
+
+#navbar a::after {
+    display: block;
+    height: 0.1em;
+    width: 2.7em;
+    background-color: var(--antracite);
+    content: '';
+    transform: translateY(0.4em);
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+#navbar a:hover:after,
+#navbar a:focus::after {
+    background-color: var(--Corail);
+    transform: translateY(0.1em);
+}
+
+
+/* Introduction section */
+
+#introduction {
+    display: grid;
+    grid-template-rows: 93vh 7vh;
+    background-image: url("../images/introduction-large.jpg");
+}
+
+#introduction h1 {
+    margin: auto 30vh 20vh auto;
+    max-width: 30vw;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding: 2vw;
+}
+
+#introduction h1 strong {
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+}
+
+
+/* My Work section - header */
+
+#work nav button {
+    font-size: 1.1em;
+}
+
+
+/* My Work section - links */
+
+#work section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#work a {
+    height: 33vw;
+}
+
+
+/* Contact section */
+
+#social-networks img {
+    width: 5vw;
+}
