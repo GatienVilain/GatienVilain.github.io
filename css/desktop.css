@@ -69,7 +69,7 @@ p {
 
 #introduction {
     display: grid;
-    grid-template-rows: 93vh 7vh;
+    grid-template-rows: 86vh 7vh;
     background-image: url("../images/introduction-large.jpg");
 }
 

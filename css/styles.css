@@ -125,6 +125,15 @@ noscript {
 #introduction a {
     height: 7vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: white
+}
+
+#introduction a:hover svg {
+    fill: var(--Corail);
+    transform: scale(1.5);
 }
 
 
