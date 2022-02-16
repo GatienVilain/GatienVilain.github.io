@@ -1,0 +1,31 @@
+/* Introduction section */
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("../images/introduction-small.jpg");
+}
+
+#introduction h1 {
+    font-size: 1.3em;
+    letter-spacing: 0.02em;
+    font-weight: 100;
+    padding: 6vw;
+    margin: 4vh 10vw;
+}
+
+
+/* Work section */
+
+#work a {
+    height: 100vw;
+    width: 100vw;
+}
+
+
+/* Contact section */
+
+#social-networks img {
+    width: 20vw;
+}

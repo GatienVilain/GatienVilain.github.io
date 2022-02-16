@@ -1,0 +1,48 @@
+/* Introduction section */
+
+#introduction {
+    display: grid;
+    grid-template-rows: 86vh 7vh;
+    background-image: url("../images/introduction-large.jpg");
+}
+
+#introduction h1 {
+    margin: auto 30vh 20vh auto;
+    max-width: 30vw;
+    font-size: 1.5em;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding: 2vw;
+}
+
+#introduction h1 strong {
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7em;
+}
+
+
+/* My Work section - header */
+
+#work nav button {
+    font-size: 1.1em;
+}
+
+
+/* My Work section - links */
+
+#work section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#work a {
+    height: 33vw;
+}
+
+
+/* Contact section */
+
+#social-networks img {
+    width: 5vw;
+}
