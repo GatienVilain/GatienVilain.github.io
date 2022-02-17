@@ -1,92 +1,179 @@
-* {
-    box-sizing: border-box;
+:root {
+    --bleu-canard: #2f8b9c;
+    --indigo: #530c9c;
+    --antracite: #2a3133;
+    --Corail: #f58045;
 }
 
+* {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background-color: #e2e8ff;
+    color: #001d9b;
+}
+
+html,
 body {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    background-color: #0a005f;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    color: #fefaf6
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: var(--antracite);
 }
 
-header {
-    position: fixed;
+
+/* Logo */
+
+#banner {
     top: 0;
-    height: 7vh;
-    width: 100%;
-    z-index: 1040;
-    background-color: #0a005fa2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 9vh;
+    width: 100vw;
     padding: 0 6vw;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .logo {
-    text-align: center;
-    font-style: oblique;
-    font-size: 2em;
-    text-transform: capitalize;
-    font-family: Brush Script MT, Big Caslon, Times New Roman, serif;
-    color: #fefaf6;
+    font-family: 'Brush Script MT', 'Bradley Hand Italic', Georgia, serif;
+    color: var(--antracite)
+}
+
+.logo:hover,
+.logo:focus {
+    transform: scale(1.2);
+}
+
+@media only screen and ( max-width: 601px) {
+    .logo.complet {
+        display: none;
+    }
+    .logo.mobile {
+        font-size: 2.5em;
+        text-decoration: none;
+    }
+}
+
+@media only screen and ( min-width: 601px) {
+    .logo.mobile {
+        display: none;
+    }
+    .logo.complet {
+        font-size: 2.3em;
+        text-decoration: none;
+    }
+}
+
+
+/* Content */
+
+section {
+    height: 91vh;
+    width: 100vw;
+    padding: 10vh 7vw;
+    line-height: 1.05;
+}
+
+@media only screen and ( max-width: 601px) {
+    h1 {
+        font-size: 2.375rem;
+    }
+    h1::after {
+        top: 3vh;
+        width: 7vh;
+        height: 7vh;
+    }
+}
+
+@media only screen and ( min-width: 601px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h1::after {
+        top: 3vh;
+        width: 10vh;
+        height: 10vh;
+    }
+}
+
+h1::after {
+    display: inline-block;
+    position: relative;
+    margin-left: 1.5vw;
+    content: "";
+    background: url("../images/Kotlin-mascot.png") no-repeat 0 0;
+    background-size: contain;
+    border-radius: 100%;
+    background-color: gray;
+}
+
+
+/* Back button */
+
+h1+a {
+    color: #0060df;
+    padding: 1vh 1vw;
     text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 5;
+    border-radius: 10em;
+    transition: background-color 0.5s;
 }
 
-.logo:hover {
-    color: #ffc4ff;
+h1+a::before {
+    content: "← ";
 }
 
-#contenu {
-    top: 10vh;
-    padding: 4vw 4vw 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-    background: url('../images/fond-espace.png') no-repeat center/cover;
+h1+a:hover,
+h1+a:focus {
+    background-color: #001c9b2d;
 }
 
-#texte-404 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 20vw;
-    font-weight: bolder;
-    font-family: Brush Script MT, Verdana, sans-serif;
-    color: rgb(211, 52, 4);
+
+/* Summary */
+
+ul {
+    margin: 3vh 0;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    list-style: none;
 }
 
-#texte-404 img {
-    max-width: 30vw;
-    width: 100%;
+li a {
+    color: var(--antracite);
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    transition: color 0.5s text-underline-offset 1s;
 }
 
-#contenu a {
-    border-radius: 1000px;
-    border: 3px solid #4FD1C5;
-    box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
-    padding: 20px;
-    text-decoration: none;
-    color: #fefaf6;
+li a:hover {
+    color: var(--Corail);
+    text-underline-offset: 0.1em;
 }
 
-#contenu a:hover {
-    background-color: #4FD1C5;
-    transition: all 0.5s;
+#about::before {
+    content: "GV";
+    font-family: 'Brush Script MT', 'Bradley Hand Italic', Georgia, serif;
+    font-size: 1.7em;
+    margin: 0 5vh 0 4vh;
 }
 
-#mascotte {
-    position: absolute;
-    bottom: 0;
-    left: 7vw;
-    max-width: 20vw;
-    width: 100%;
+#works::before {
+    display: inline-block;
+    position: relative;
+    margin-right: 1.5vw;
+    top: 3vh;
+    width: 10vh;
+    height: 7vh;
+    content: "";
+    background: url("../images/mars_et_ferris.png") no-repeat 0 0;
+    background-size: contain;
 }

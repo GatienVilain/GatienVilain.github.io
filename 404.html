@@ -2,22 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 : page introuvable</title>
+    <meta charset='utf-8'>
+    <!-- Metadata -->
+    <title>404: Page Not Found</title>
+    <meta name="author" content="Gatien Vilain">
+    <meta name="description" content="French engineering student at Junia ISEN Lille. Find some of my projects and information about me on this site.">
+    <meta name="keywords" content="Gatien, Vilain, Engineer, Junia, ISEN, Lille, Digital, Electronic, Rust, C, Cpp, C++, Python, HTML, HTML5, CSS, CSS3, JavaScript, JS, Website, Game, RFID">
+    <!-- Page Layout-->
+    <meta name="theme-color" content="white">
+    <meta name="color-scheme" content="normal">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" sizes="360x360" href="images/logo.jpg" type="image/jpg">
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="./css/404.css">
 </head>
 
 <body>
-    <header>
-        <a href="./index.html" class="logo">Gatien Vilain</a>
+    <header id="banner">
+        <a title="Return to home page" href="/" class="logo complet">Gatien Vilain</a>
+        <a title="Return to home page" href="/" class="logo mobile">GV</a>
     </header>
-    <section id="contenu">
-        <span id="texte-404">4<img src="./images/mars_et_ferris.png" alt="0">4</span>
-        <p>Ooups! Il semble que tu es perdu.</p>
-        <a href="./index.html">Retourner à l'accueil</a>
-        <img src="./images/Kotlin-mascot.png" alt="Mascotte en panique" id="mascotte">
+    <section>
+        <h1>Sorry, we can’t find that page</h1>
+        <a title="Go to my works page, where I present to you the projects I have worked on" href="/">Back to home</a>
+        <ul>
+            <li id="about"><a title="Go to the about me page, where I will introduce myself in more detail" href="/about">Learn</a> about me, who I am and what excites me.</li>
+            <li id="works"><a title="Go to my works page, where I present to you the projects I have worked on" href="/">Explore</a> the projects I have been able to carry out.</li>
+        </ul>
     </section>
 </body>
 

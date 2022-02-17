@@ -1,103 +1,97 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Gatien Vilain - Engineering Student</title>
+    <!-- Metadata -->
+    <title>Gatien Vilain - Portfolio</title>
     <meta name="author" content="Gatien Vilain">
-    <meta name="keywords" content="Gatien, Vilain, Ingénieur, Junia, ISEN, Lille, Rust, C, Cpp, C++, Python, Kotlin, HTML, HTML5, CSS, CSS3, JavaScript, PHP">
+    <meta name="description" content="French engineering student at Junia ISEN Lille. Find some of my projects and information about me on this site.">
+    <meta name="keywords" content="Gatien, Vilain, Engineer, Junia, ISEN, Lille, Digital, Electronic, Rust, C, Cpp, C++, Python, HTML, HTML5, CSS, CSS3, JavaScript, JS, Website, Game, RFID">
+    <!-- Page Layout-->
+    <meta name="theme-color" content="white">
+    <meta name="color-scheme" content="normal">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" sizes="219x219" href="images/logo.jpg" type="image/jpg">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" media="only screen and ( max-width : 601px )" href="./css/home-mobile.css">
+    <link rel="stylesheet" media="only screen and ( min-width : 601px ) and ( max-width : 992px )" href="./css/home-tablet.css">
+    <link rel="stylesheet" media="only screen and ( min-width : 992px )" href="./css/home-desktop.css">
+    <!--  Scripts  -->
+    <script src="./js/script.js" async></script>
+    <script media="only screen and ( max-width : 993px )" src="./js/mobile.js" async></script>
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo">Gatien Vilain</a>
-        <input type="checkbox" id="menu-chekbox">
-        <label for="menu-chekbox">&#9776;</label>
-        <nav class="menu">
-            <a href="#presentation">Qui suis-je ?</a>
-            <a href="#projets">Mes Projets</a>
-            <a href="#contact">Me Contacter</a>
+    <noscript>
+        <p>
+            <strong>Caution</strong>: Scripting features are not supported or are disabled. Some site <strong>functions require JavaScript</strong> and may not work.
+        </p>
+    </noscript>
+    <header id="banner">
+        <a title="Return to home page" href="/" class="logo complet">Gatien Vilain</a>
+        <a title="Return to home page" href="/" class="logo mobile">GV</a>
+        <button title="Open the navigation bar" id="navbar-button" class="close" onclick="changes_menu_state()"></button>
+        <nav id="navbar">
+            <a title="Go to my work section" href="#work" onclick="changes_menu_state()">WORK</a>
+            <a title="Go to the about me page, where I will introduce myself in more detail" href="/about">ABOUT</a>
         </nav>
     </header>
-    <section id="presentation">
-        <span>
-            <img src="./images/Presentation.jpg" alt="Gatien Vilain">
-            <div>
-                <h1>Hey, je m'appelle Gatien !</h1>
-                <p>
-                    Je suis étudiant à Junia ISEN Lille - Institut supérieur de l'électronique et du numérique.
-                </p>
-            </div>
-        </span>
-        <p>
-            Je suis une personne très curieuse, ainsi je me suis rapidement intéressé au monde qui m'entoure et en particulier les nouvelles technologies. Je maitrise plusieurs langages de programmation, comme C, Kotlin, Python, Rust et bien d'autres. Je suis une
-            personne souriante et dynamique. J'aime prendre des photos, faire du sport, comme l’escalade et la natation, et parcourir le monde. J'adore voyager, rencontrer des gens et leur culture.
-        </p>
+    <section id="introduction">
+        <h1><strong>Hi, I'm Gatien Vilain</strong>, a French engineering student at Junia ISEN Lille.</h1>
+        <a title="Skip to my work section" href="#work">
+            <svg width="4em" height="3em" viewBox="0 0 53 20">
+                <polygon points="26.5,17.688 9.114,3.779 10.303,2.312 26.5,15.269 42.697,2.313 43.886,3.779"></polygon>
+            </svg>
+        </a>
     </section>
-    <section id="projets">
-        <div>
-            <h2>Mes projets</h2>
+    <section id="work">
+        <header>
+            <h2>My work</h2>
             <p>
-                Toujours à la recherche de connaissances, je m'amuse à réaliser plusieurs projets pour découvrir de nouveaux outils et augmenter mon expérience dans les nouvelles technologies.
+                Always in search of knowledge, I enjoy carrying out several projects to discover new tools and increase my experience in new technologies.
             </p>
-        </div>
-        <section id="website">
-            <div>
-                <h3>Un site Web</h3>
-                <p>
-                    Pour améliorer mes compétences en programmation web, j'ai décidé de réaliser un site internet (celui-ci) pour me présenter.
-                </p>
-                <span>
-                    <p> Pour en savoir plus, voici le lien du dépôt </p>
-                    <a href="https://github.com/GatienVilain/GatienVilain.github.io" target="_blank">GitHuB &raquo</a>
-                </span>
-            </div>
-            <img src="./images/website.jpg" alt="Ordinateur avec site internet">
-        </section>
-        <section id="binairo">
-            <img src="./images/Binairo.jpg" alt="Fenêtre du jeu de Binairo">
-            <div>
-                <h3>Un jeu vidéo</h3>
-                <p>
-                    Dans le cadre du projet de fin d'année de première année d'école préparatoire, il m'a été demandé de programmer en Python un jeu de Binero comprenant une interface graphique (TkInter)
-                </p>
-                <span>
-                    <p>Tu peux retrouver le projet sur </p>
-                    <a href="https://github.com/GatienVilain/Binairo" target="_blank">GitHuB &raquo</a>
-                </span>
-            </div>
-        </section>
-        <section id="electronique">
-            <div>
-                <h3>Un système électronique</h3>
-                <p>
-                    En deuxième année d'école préparatoire, j'ai choisi le sujet de la RFID - Radio-identification - pour mon sujet de travail d'initiative personnelle encadré. À cette occasion, j'ai réalisé un système de bornes de métro avec lecture par technologie RFID
-                    et vérification de la validité du titre de transport par communication avec une base de données.
-                </p>
-            </div>
-            <video src="./videos/rfid.mp4" type="Système de borne RFID" autoplay muted loop>
-                Il semble que votre navigateur internet ne supporte pas la lecture de video.
-            </video>
+            <nav title="Navigation bar to filter my projects by discipline">
+                <button title="Show all projets" id="button-all" class="active" onclick="works_filter('all')">SHOW ALL</button>
+                <button title="Show digital projects only" id="button-digital" onclick="works_filter('digital')">DIGITAL</button>
+                <button title="Show electronic projects only" id="button-electronic" onclick="works_filter('electronic')">ELECTRONIC</button>
+            </nav>
+        </header>
+        <section>
+            <a title="Go to the page that presents my website" id="website" class="digital" rel="external" href="https://github.com/GatienVilain/GatienVilain.github.io" hreflang="fr">
+                <h3>MY WEBSITE</h3>
+            </a>
+            <a title="Go to the page presenting the 'philia' project" id="philia" class="digital" rel="external" href="https://github.com/Philia-Polem/Philia" hreflang="fr">
+                <h3>PHILIA</h3>
+            </a>
+            <a title="Go to the page that presents my adaptive lighting touch lamp project" id="adaptive-touch-lamp" class="electronic" rel="external" href="https://github.com/GatienVilain/lampe-tactile-adaptatif" hreflang="fr">
+                <h3>ADAPTIVE LIGHTING TOUCH LAMP</h3>
+            </a>
+            <a title="Go to the page that presents my binairo written in python" id="binairo" class="digital" rel="external" href="https://github.com/GatienVilain/Binairo" hreflang="fr">
+                <h3>BINAIRO</h3>
+            </a>
         </section>
     </section>
     <section id="contact">
-        <h2>Me contacter</h2>
+        <h2>Contact me</h2>
         <p>
-            Retrouve-moi sur le réseau social de ton choix ou contacte-moi à l'adresse mail <a href="mailto:Gatien.Vilain@outlook.fr">gatien.vilain@outlook.fr</a>
+            Find me on the social network of your choice or contact me at this email address
+            <a title="Opens a new window in your email client with my email address already filled in." class="email" rel="external" href="mailto:Gatien.Vilain@outlook.fr">
+                gatien.vilain@outlook.fr
+            </a>
         </p>
-        <span>
-            <a id="linkedin" href="https://github.com/GatienVilain" target="_blank">
-                <img src="./images/github.png" alt="logo github">
-            </a>
-            <a id="github" href="https://www.linkedin.com/in/gatien-vilain/" target="_blank">
-                <img src="./images/linkedin.png" alt="logo linkedin">
-            </a>
+        <span id="social-networks">
+            <a title="Open my LinkedIn page in a new tab" id="github" rel="external" href="https://github.com/GatienVilain" target="_blank" rel="noreferrer" rel="noopener">
+                <img src="./images/github.png" alt="My github page"></a>
+            <a title="Open my GitHub page in a new tab" id="linkedin" rel="external" href="https://www.linkedin.com/in/gatien-vilain/" target="_blank"  rel="noreferrer" rel="noopener">
+                <img src="./images/linkedin.png" alt="My linkedin profile"></a>
         </span>
     </section>
-    <footer>&copy Gatien Vilain – Copyright 2022</footer>
+    <footer>
+        <p>Gatien Vilain</p>
+    </footer>
 </body>
 
 </html>
